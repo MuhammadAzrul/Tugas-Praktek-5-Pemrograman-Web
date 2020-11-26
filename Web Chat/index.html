@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Web Chat</title>
+		<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	</head>
+	<body>
+		<div id="intro">
+			<h1 style="font-family:Montserrat;color: rgb(0, 0, 0);"><marquee>SELAMAT DATANG</marquee></h1>
+		</div>
+
+		<img src="img/Logo.png" height="100px">
+		<h2 style="font-family:Montserrat;color: rgb(255, 255, 255);">KLIK BUTTON CHAT MESSAGE UNTUK MENCOBA FITUR INI</h2>
+
+		<div class="chat-popup" id=myform>
+		<div id="chat">
+			
+  				<div id="judul">
+    				<h2>WEB CHAT</h2>
+    				<div class="garisjudul"></div>
+  				</div>
+			
+
+			<form name="nama" action="" >
+        			<input placeholder="Nama Anda" name="pengguna" type="text" id="pengguna" class="pengguna"  />
+    			</form>
+    			<br>
+    			<div id="kolomchat">
+				
+				</div>
+				<br>
+					<input name="penggunapsn" type="text" id="penggunapsn" class="pengguna" placeholder="Masukan Pesan" />
+					<br>
+					<br>
+        			<input name="submitpesan" class="kirim" type="submit" id="submitpesan" value="KIRIM" />
+    				<button type="button" class="kirim" onclick="closeform()">TUTUP</button>
+    				</div>
+		</div>
+		<script src="JS/user.js"></script>
+		<button style="font-family:Montserrat;color: rgb(0, 0, 0);"class="open-button" onclick="openform()">CHAT MESSAGE</button>
+		<br>
+		<p style="font-family:lucida sans;color:white"align="center">Copyright © 2020 by Muhammad Azrul</p>
+	</body>
+</html>

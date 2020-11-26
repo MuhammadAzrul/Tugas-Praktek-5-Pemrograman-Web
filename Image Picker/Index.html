@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Picker</title>
+    </head>
+
+    <body style="margin: 210px" bgcolor="black">
+        <center><img src="Img/Logo.png" weight="150" height="150"></center>
+        <h1 style="font-family:Montserrat;background: white;"><marquee>Welcome</marquee></h1>
+        <center><h1 style="font-family:Montserrat;background: white;">Take Your Moment</h1></center>
+        <center>
+        <select onchange="gantigambar();" id="listgambar">
+            <option value="" disabled selected>Choise Your Gear</option>
+			<option value="img/Canon 1Dx.jpg">CANON 1 DX</option>
+            <option value="img/Lumix S1.jpg">Lumix S1</option>
+            <option value="img/Nikon D4.jpg">Nikon D4</option>
+            <option value="img/Sony-a7SIII.jpg">Sony-a7SIII</option>
+            <option value="img/Red Raven.jpg">Red Raven</option>
+		</select>
+        </center>
+        <br>
+        <br>
+        
+        <img src="img/P4K-Videos-Thumbnail.jpg" style="width: 100%" id="gambar">
+        <p style="font-family:lucida sans;color:white"align="center">Copyright © 2020 Ardly Studio - All Rights Reserved. Designed by Muhammad Azrul</p>
+        <script type="text/javascript">
+            function gantigambar() {
+                let gambar = document.getElementById("listgambar").value;
+                document.getElementById("gambar").src = gambar;
+                alert("Your Gear " + gambar);
+            }
+            
+        </script>
+    </body>
+</html>

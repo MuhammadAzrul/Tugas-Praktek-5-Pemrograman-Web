@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<img src="img/Logo.png">
+	<body style="background-color: rgb(0, 0, 0);color:whitesmoke; text-align: center;">
+		<h1 style= "font-family:Montserrat;"><marquee>SELAMAT DATANG</marquee>
+		<center> DI FITUR KURS MATA UANG</h1></center>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kurs Rupiah</title>
+	<style>
+		body {
+			color: black;
+			min-height: 90vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: rgb(0, 0, 0);
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			background-color: #3b4142;
+			padding: 1em;
+			max-width: 500px;
+			width: 100%;
+			border-radius: 1em;
+		}
+
+		input, select, button {
+			margin: 1em;
+			padding: 1em;
+			border-radius: 1em;
+			outline: none;
+			border: 1px solid #4290c4;
+		}
+
+		.result {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<input type="number" class="input" placeholder="Masukan Jumlah">
+		<select class="kurs">
+			<option value="Dollar US">Dollar US</option>
+			<option value="Dollar Singapore">Dollar Singapore</option>
+			<option value="Ringgit Malaysia">Ringgit Malaysia</option>
+			<option value="Yen Jepan">Yen Jepan</option>
+			<option value="Euro">Euro</option>
+			<option value="Riyal Arab Saudi">Riyal Arab Saudi</option>
+		</select>
+		<button class="hitung">Hitung</button>
+		<p class="result">Nilai Rupiah: </p>
+	</div>
+
+	<script>
+		const input = document.querySelector(".input");
+		const kurs = document.querySelector(".kurs");
+		const btnHitung = document.querySelector(".hitung");
+		const result = document.querySelector(".result");
+
+		btnHitung.addEventListener("click", function() {
+			if (kurs.value == "Dollar US") {
+				result.innerHTML = "Hasil: " + parseInt(input.value) * 13472;
+			}
+
+			else if (kurs.value == "Dollar Singapore") {
+				result.innerHTML = "Hasil: " + parseInt(input.value) * 9915;
+			}
+
+			else if (kurs.value == "Ringgit Malaysia") {
+				result.innerHTML = "Hasil: " + parseInt(input.value) * 874;
+			}
+			else if (kurs.value == "Yen Jepan") {
+				result.innerHTML = "Hasil: " + parseInt(input.value) * 120;
+			}
+			else if (kurs.value == "Euro") {
+				result.innerHTML = "Hasil: " + parseInt(input.value) * 15888;
+			}
+			else if (kurs.value == "Riyal Arab Saudi") {
+				result.innerHTML = "Hasil: " + parseInt(input.value) * 3592;
+			}
+		})
+	</script>
+	<p style="font-family:lucida sans;color:white"align="center">Copyright © 2020 by Muhammad Azrul</p>
+</body>
+</html>

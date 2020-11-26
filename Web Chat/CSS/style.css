@@ -1,0 +1,107 @@
+/*CSS untuk menghias fitur web chat*/
+body {
+	background: #000000;
+
+}
+#intro{
+	background: rgb(245, 241, 241);
+	text-align: center;
+}
+
+.kirim{
+	background-color:#ffffff;
+	color: black;
+	font-size: 11pt;
+	width: 15%;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 10px;
+	transition-duration: 0.4s;
+	font-family: Montserrat;
+}
+
+#chat {
+	background-color: #2979ff;
+	font-family: Montserrat;
+	border-radius: 8px;
+	box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+	height: 520px;
+	margin: 150px auto auto auto;
+	width: 450px;
+}
+
+
+
+#judul {
+	font-family:  Montserrat;
+    letter-spacing: 2px;
+    color: white;
+    padding-bottom: 23px;
+    padding-top: 13px;
+    text-align: center;
+}
+
+.garisjudul {
+     border-bottom: 5px solid #ffffff;
+    height: 8px;
+    margin: -16px auto 0 auto;
+    width: 200px;
+
+}
+h2{
+	font-family: Montserrat;
+}
+
+ 
+.open-button{
+	color: #708090;
+	font-family: Montserrat;
+	font-size: 18pt;
+	padding: 16px 20px;
+	border:none;
+	cursor: pointer;
+	position: center;
+	bottom: 23px;
+	right: 28px;
+	width: 280px;
+}
+
+ 
+.chat-popup{
+	display:none;
+	bottom: 10px;
+	right: 15px;
+	z-index: 9;
+	position: center; 
+}
+
+body {
+    text-align:center;
+    padding:35px;
+     }
+
+#kolomchat {
+    text-align:left;
+    margin: auto;
+    background:#fff;
+    height:230px;
+    width: 250px;
+    list-style-type: none;
+    border:1px solid black;
+    overflow:auto; }
+  
+#penggunapsn {
+    width:225px;
+    border:1px solid #ACD8F0;
+}
+  
+.pengguna{
+	width: 228px;
+	height: 25px;
+	text-align: center;
+}
+
+
+
+
+ 
